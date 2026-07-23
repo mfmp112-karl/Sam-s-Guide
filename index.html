@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Working Together — A Quick Guide for Sam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0D1B2A;--gold:#B8860B;--ink:#1c2733;--muted:#5b6b7a;--line:#e6e2d6;--wash:#faf8f2;--green:#2e7d54}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Inter,-apple-system,sans-serif;color:var(--ink);background:#fff;line-height:1.55;max-width:820px;margin:0 auto;padding:40px 34px 60px}
+  header{border-bottom:3px solid var(--navy);padding-bottom:16px;margin-bottom:22px}
+  .kick{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  h1{font-family:Fraunces,Georgia,serif;font-size:26px;color:var(--navy);margin-top:4px;font-weight:700}
+  .sub{color:var(--muted);font-size:14px;margin-top:4px}
+  h2{font-family:Fraunces,Georgia,serif;font-size:18px;color:var(--navy);margin:26px 0 10px;font-weight:600}
+  p{font-size:14px;margin-bottom:9px}
+  ol,ul{margin:4px 0 10px 20px}
+  li{font-size:14px;margin-bottom:6px}
+  .steps-num{counter-reset:s;list-style:none;margin-left:0}
+  .steps-num li{counter-increment:s;position:relative;padding-left:32px;margin-bottom:10px}
+  .steps-num li::before{content:counter(s);position:absolute;left:0;top:0;width:22px;height:22px;background:var(--navy);color:#fff;border-radius:50%;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13.5px}
+  th{background:var(--navy);color:#fff;text-align:left;padding:9px 11px;font-weight:600}
+  td{border:1px solid var(--line);padding:9px 11px;vertical-align:top}
+  td code{background:#f1efe7;padding:1px 6px;border-radius:5px;font-size:12.5px;font-family:ui-monospace,Menlo,Consolas,monospace}
+  .mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px}
+  .box{background:var(--wash);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+  .box b{color:var(--navy)}
+  .example{background:#f4faf6;border:1px solid #bfe0cc;border-radius:10px;padding:12px 15px;margin:10px 0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;white-space:pre-wrap;line-height:1.5}
+  .tag{display:inline-block;background:var(--navy);color:#fff;font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px}
+  footer{margin-top:30px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted)}
+  @media print{body{padding:0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="kick">AskSidney × Valetax</div>
+  <h1>Working together, from here 🤝</h1>
+  <div class="sub">A quick guide for Sam · how updates flow now · 23 Jul 2026</div>
+</header>
+
+<p>Hi Sam — we've set up a system on our side that reads your updates automatically and acts on them instantly, so there's <b>less back-and-forth</b> and clients get sorted faster. Nothing about <i>your</i> job changes much; this just makes your updates count the moment you send them. Here's the whole thing on one page.</p>
+
+<h2>What the system now does for you</h2>
+<p>Every time a client registers under Sidney, Valetax already emails his inbox — our system reads those automatically, so <b>most clients are confirmed with no input from you at all</b>. You only need to weigh in on the ones the inbox can't see: clients under another MIB, direct clients, or ones not found. That's where your report comes in.</p>
+
+<h2>How to send your updates — pick whichever is easier</h2>
+<ol class="steps-num">
+  <li><b>The shared Google Sheet (best).</b> In the sheet Sidney already shared with you, there's a tab called <b>"Sam Report"</b>. Paste your table there — two columns, exactly how you already write it. The system reads it within the hour and marks each row ✔ once it's handled.</li>
+  <li><b>By email.</b> Send the same table to <span class="mono">sidneynyaga@gmail.com</span> with the subject line <b>VALETAX REPORT</b>. (The subject matters — that's how the system knows to read it.)</li>
+</ol>
+
+<h2>The format — same table you already make</h2>
+<table>
+  <tr><th>Email</th><th>Remarks</th></tr>
+  <tr><td class="mono">waikenadaniel@gmail.com</td><td>under sidneynyaga@gmail.com</td></tr>
+  <tr><td class="mono">lemayianmelvin@yahoo.com</td><td>under MIB mboyafaith370@gmail.com</td></tr>
+  <tr><td class="mono">sebspoiler@gmail.com</td><td>Not found</td></tr>
+  <tr><td class="mono">xtremelemiso@gmail.com</td><td>direct client</td></tr>
+</table>
+
+<h2>What each remark makes happen automatically</h2>
+<table>
+  <tr><th>When you write…</th><th>The system instantly…</th></tr>
+  <tr><td><b>under sidneynyaga@gmail.com</b></td><td>Marks the client verified — Sidney approves them into the community.</td></tr>
+  <tr><td><b>under MIB &lt;their email&gt;</b></td><td>Emails that client the migration request to send to Valetax, so they can be moved under Sidney.</td></tr>
+  <tr><td><b>Not found</b></td><td>Emails the client the sign-up steps to open their account.</td></tr>
+  <tr><td><b>direct client</b></td><td>Marks them as being moved — no action needed; it closes itself once the tagging reflects.</td></tr>
+</table>
+<p style="font-size:12.5px;color:var(--muted)">Anything you write that doesn't match these four, the system simply flags for Sidney to read — it never guesses.</p>
+
+<h2>The two things that still need you</h2>
+<ul>
+  <li><b>Tagging clients under Sidney</b> at Valetax — the actual move only you and your team can do.</li>
+  <li><b>Confirming the unknowns</b> — which clients are under another MIB, direct, or not registered.</li>
+</ul>
+<p>To keep it easy, the system sends you one short reminder at <b>9:00am</b> and <b>2:00pm</b> — but <b>only if</b> there are clients still waiting on you. If there's nothing pending, you hear nothing.</p>
+
+<div class="box">
+  <b>A worked example.</b> You paste this into the Sam Report tab:
+  <div class="example">Email                          Remarks
+nkasura@gmail.com              under MIB ianndugirewainaina@gmail.com
+jumamorgan228@gmail.com        Not found
+jerry1933@hotmail.co.za        direct client</div>
+  Within the hour: nkasura gets the migration email, jumamorgan gets sign-up steps, jerry is marked "being moved," and all three rows show ✔. You did nothing else.
+</div>
+
+<h2>Access — you already have it</h2>
+<p>You're already on the shared Google Sheet (as <span class="mono">Samuel.nyaga@valetax.com</span>). The <b>"Sam Report"</b> tab appears there automatically once the system goes live. If you ever can't find the tab, just use the email option above — it works exactly the same.</p>
+
+<footer>AskSidney × Valetax · working guide. Thank you for the partnership, Sam. 🙏 — Sidney</footer>
+</body>
+</html>
